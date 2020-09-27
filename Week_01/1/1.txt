@@ -1,0 +1,3 @@
+code:1
+思路一：暴力解法  time:O(n^2) zone:O(1)
+思路二：hashtable time:O(n) zone:O(1)

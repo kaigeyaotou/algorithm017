@@ -1,0 +1,15 @@
+第一遍：
+思路1：foreach将数据转换为int类型，int+1,之后将int转换为array  time:O(n)   zone:O(n)
+思路2：for..loop ,从数组末尾开始，和为10的时候，临时变量记录值，下次循环加上，最后首位为10的时候，扩充数组   time:O(n)  zone:O(1)
+
+核心代码：
+ for (int i = digits.Length - 1; i >= 0; i--)
+            {
+                digits[i]++;
+                digits[i] %= 10;
+                if (digits[i] != 0)
+                    return digits;
+            }
+            digits = new int[digits.Length + 1];
+            digits[0] = 1;
+            return digits;
