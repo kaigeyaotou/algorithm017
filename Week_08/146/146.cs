@@ -1,11 +1,10 @@
-### 146 lru实现
+﻿using System;
+using System.Collections.Generic;
+using System.Text;
 
-> 思路：使用dictionary和双向列表实现
-
-**需要注意在交换节点时的顺序问题**
-
-```csharp
-  public static class _146
+namespace LeeCodeTur._146
+{
+    public static class _146
     {
         public class LinkedList
         {
@@ -96,31 +95,4 @@
             }
         }
     }
-```
-
-
-
-### 191 位1的个数
-
-> 思路一：迭代
-
-> 思路二：位运算
-
-```csharp
-  public static int HammingWeight(uint n)
-        {
-            int sum = 0;
-            while (n != 0)
-            {
-                sum++;
-                n &= (n - 1);
-            }
-            return sum;
-
-          
-           
-        }
-```
-
-
-
+}
